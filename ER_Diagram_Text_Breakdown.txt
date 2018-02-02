@@ -1,0 +1,25 @@
+We can update this as needed if we realize we need more or some is redundant
+
+vehicles (seller, item_id, description, url, reserve_price, buy_it_now, location, date_posted, date_end, bids (weak))
+users (user_name, password, email, name, address (weak), phone, credit_cards (weak), age, gender, income, ratings (weak), viewing_history (weak)))
+dealerships (same as user)
+ratings (weak, who, order, stars_recieved, message)
+address (weak, street_address, city, state, zip)
+credit (weak, type, number, expiration_date)
+bids (weak, offer, bidder)
+categories (type)
+brands (name)
+models (name, year)
+auction_statistics (date, category, stat)
+auctioned (item_id, date, price, buyer, seller, item_recieved_successful, charge_successul)
+viewing_history (weak, item_id, date)
+
+users sells products
+users buy products
+dealerships sell products
+users have ratings
+users bid (users sells products)
+product is categories is brands is models
+
+Good deal/Bad deal, Price snapshots using auction statistics displayed on calender, Your recently browsed items, People who viewed this also viewed...
+
